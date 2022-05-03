@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+// import React, { useState, useEffect } from 'react';
 import './App.css';
+import { useState } from 'react';
+import Modal from './components/Modal';
+import Button from 'react-bootstrap/Button';
 
 function App() {
+  const [modalShow, setModalShow] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="widget">
+          <intelligence-widget apiKey="YOUR_API_KEY_HERE" topicId="a1Gb0000000LGk6EAG"></intelligence-widget>          
+      </div>
+      <Button variant="primary" onClick={() => setModalShow(true)}>
+        Embed Widget
+      </Button>
+
+      <Modal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </div>
   );
 }
 
 export default App;
+
