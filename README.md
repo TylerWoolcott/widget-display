@@ -24,7 +24,11 @@ Makes most sense to use **web components** for the widget and **React** for the 
 
 ## Different architectures pros / cons
  ## Web components:
- - Combine **Custom Elements**, an API that allows custom HTML elements (named and defined with custom attributes/events) to be defined and used like any other element, **Shadow DOM**, an API allows an encapsulated DOM element which is attached to a host DOM element (CSS styles applied in the Shadow DOM will not bleed into the host document, and vice versa), **HTML Templates**, an API that provides `<template>` and `<slot>` tags to easily markup UI for reuse, without rendering them, and **HTML Import**, an API that allows the import of Web Components from separate resource definitions. For example, a custom `<intelligence-widget>` element could be developed once and imported, configured and run on any other site.
+ Web components combine the following:
+ - **Custom Elements**, an API that allows custom HTML elements (named and defined with custom attributes/events) to be defined and used like any other element; 
+ - **Shadow DOM**, an API allows an encapsulated DOM element which is attached to a host DOM element (CSS styles applied in the Shadow DOM will not bleed into the host document, and vice versa); 
+ - **HTML Templates**, an API that provides `<template>` and `<slot>` tags to easily markup UI for reuse, without rendering them, and;
+ - **HTML Import**, an API that allows the import of web components from separate resource definitions. For example, a custom `<intelligence-widget>` element could be developed once and imported, configured and run on any other site.
 
 **Pros**: 
 - Cross-browser (web standard) for creating and extending reusable components.
