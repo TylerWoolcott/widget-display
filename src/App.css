@@ -1,17 +1,7 @@
 .container {
-  padding: 64px 24px 24px;
-  max-width: 28rem;
-
-  @media (min-width: 640px) {
-    padding: 64px;
-  }
+  padding: 24px;
 }
 
 .widget {
-  width: 100%;
-
-  @media (min-width: 640px) {
-    width: 400px;
-  }
+  width: 400px;
 }
-
