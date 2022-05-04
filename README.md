@@ -1,7 +1,7 @@
 
 # Serendipity AI case study 
 
-## Link to website with embedded web component widget I built that can be embedded in any website
+## Link to embeddable web component widget
 https://widget-display.vercel.app/
 
 ## Requirements
