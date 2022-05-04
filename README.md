@@ -1,6 +1,9 @@
 
 # Serendipity AI case study 
 
+## Link to website with embedded web component widget I built that can be embedded in any website
+https://widget-display.vercel.app/
+
 ## Requirements
 
 Build a reusable widget which can be embedded in any website. 
@@ -128,7 +131,7 @@ I actually really enjoyed it but it took me quite a while because I had to learn
 
 I believe I have done a good job in my presentation, in terms of clear code and commits. I have not tidied/rebased my commit messages so you can get a good idea of my progress and thoughts throughout development.
 
-I am pleased with the responsive frontend which works nicely at different resolutions and on mobile thanks to Bootstrap for the embed modal.
+I am pleased with the responsive frontend which works nicely at different resolutions and on mobile thanks to Bootstrap for the widget embed links modal.
 
 ## Would could I have done better?
 
