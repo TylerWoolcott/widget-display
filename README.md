@@ -56,8 +56,8 @@ Makes most sense to use **web components** for the widget and **React** for the 
 - If we do want to share styles between components, their advantage related to encapsulation turns into a disadvantage, we can't share code (or styles) between components. 
 - Unknown SEO implications: Some tidbits on the internet report SEO support for Web Components with mixed results, so any heavy websites with Web components may suffer from inefficient indexing
 - There may be issues importing third-party libraries that contain styles, and we may have to find compromises on how to use third party libraries in the Web component
-- cons of shadowdom: If you want to style your component using a global CSS stylesheet, you should avoid using Shadow DOM in that particular component, as the global styles will not be applied if you use it.
-- You should handle event propagation with care if you are using Shadow DOM in your component, as the use of UI events is different in and out of the shadow boundary.
+- If we want to style your component using a global CSS stylesheet, we should avoid using Shadow DOM in that particular component, as the global styles will not be applied if you use it.
+- We should handle event propagation with care if we are using Shadow DOM in our component, as the use of UI events is different in and out of the shadow boundary.
 - Some payment processors don't support shadow DOM in the official clients
 - Many platforms such as WIX.com and Wordpress tend to offer the option to embed via an iFrame rather than web components. 
    
@@ -84,7 +84,7 @@ Makes most sense to use **web components** for the widget and **React** for the 
 - Iframe framework pages will increase the HTTP requests of the server, which is not advisable for large websites.
 
 ## Widget architecture used 
-- **Web components**, **shadow DOM**, and **custom elements** together with **React**. 
+**Web components**, **shadow DOM**, and **custom elements** together with **React**. 
 
 ## Layout configuration considerations 
  - Allow the widget to expand to fill its container, giving control to the developer (SI recommends using a container width of around 350-400px and a minimum of 300px). 
@@ -117,12 +117,12 @@ How did this little mini project go?
 
 I actually really enjoyed it but it took me quite a while because I had to learn web components and how to use them in a React project environment. If I were to tackle a project of similar size then it would take me less than half the time. I developed a system of working comprising of 3 interlinking parts. 
 1. **Widget Maker repo**
-- I developed and built the widget then `yarn run build`ed it and copied the `build/static/index.js` file.
+I developed and built the widget then `yarn run build`ed it and copied the `build/static/index.js` file.
 2. **Widget Host repo**
 - I pasted it into the `public/index.js`directory and removed the existing one. 
 - I pushed the changes to the repo and deployed it to Vercel `https://widget-host.vercel.app/index.js`
 3. **Widget Display repo**
-- I pasted the `<script type="text/javascript" src="https://widget-host.vercel.app/index.js"></script>` into the `public/index.html` file and added the `<intelligence-widget apiKey="YOUR_API_KEY_HERE" topicId="a1Gb0000000LGk6EAG" language="en"></intelligence-widget>` to the src/app.js file. This repo represents a customer embedding the widget on their site, which users can copy the embed link from the frontend and paste it into their own site.
+I pasted the `<script type="text/javascript" src="https://widget-host.vercel.app/index.js"></script>` into the `public/index.html` file and added the `<intelligence-widget apiKey="YOUR_API_KEY_HERE" topicId="a1Gb0000000LGk6EAG" language="en"></intelligence-widget>` to the src/app.js file. This repo represents a customer embedding the widget on their site, which users can copy the embed link from the frontend and paste it into their own site.
 
 ### What am I proud of?
 
