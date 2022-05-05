@@ -9,5 +9,11 @@ body {
 }
 
 .widget {
-  width: 400px;
+  width: 100%;
+}
+
+@media (min-width: 400px) {
+  .widget {
+    width: 400px;
+  }
 }
