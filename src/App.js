@@ -21,7 +21,7 @@ function App() {
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
-      </div>
+    </div>
   );
 }
 
