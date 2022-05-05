@@ -94,20 +94,26 @@ Makes most sense to use **web components** for the widget and **React** for the 
  - Offer some limited options for customising the style of the widget (SI's widget supports the changing of background colour. thumbnail radius, and/or font family through the use of an enclosing div tag and css). To do this we can use CSS variable custom properties scoped to the custom element. 
 
 ## Ways I might evolve the widget to improve its appeal and utility
- - Using the widget, enable customers to more fully customise and surface the transformation maps on their site, add custom animations (e.g., [Flourish](https://flourish.studio/examples/)), invite and collaborate with others, run reports and SEO analytics, export data. Perhaps find a clever way to gamify the maps using the widget (e.g., [SportsDataIO](https://sportsdata.io/developers/widgets-guide)). 
- - Allow customers to attach notes/comments to the transformation maps (e.g., [Loom](https://support.loom.com/hc/en-us/articles/360017464517-How-to-react-to-videos-with-emojis-and-in-video-comments-)). 
- - Offer different subscription access tiers through the widget (e.g., [Zendesk](https://support.zendesk.com/hc/en-us/articles/4408836216218#topic_bkd_qgd_bq)).
- - Enable users to rate the relevance of the transformation maps to boost the algorithm in order to better meet their needs (ratings would not be not publicly viewable).
-- Attach event listeners to custom elements to track when and how the events are fired, as well as the data submitted with them.
+ - Using the widget, enable customers to more fully customise and surface the transformation maps on their site, such as: 
+   - Add custom animations (e.g., [Flourish](https://flourish.studio/examples/)); 
+   - Invite and collaborate with others; 
+   - Run reports;
+   - Gather SEO analytics; 
+   - Export data; 
+   - Perhaps find a clever way to gamify the maps using the widget (e.g., [SportsDataIO](https://sportsdata.io/developers/widgets-guide));
+   - Allow customers to attach notes/comments to the transformation maps (e.g., [Loom](https://support.loom.com/hc/en-us/articles/360017464517-How-to-react-to-videos-with-emojis-and-in-video-comments-)). 
+   - Offer different subscription access tiers through the widget (e.g., [Zendesk](https://support.zendesk.com/hc/en-us/articles/4408836216218#topic_bkd_qgd_bq)).
+   - Enable users to rate the relevance of the transformation maps to boost the algorithm in order to better meet their needs (ratings would not be not publicly viewable).
+   - Attach event listeners to custom elements to track when and how the events are fired, as well as the data submitted with them.
 
 ## Installing and running client locally 
 
-> Note that if you want to test out the app, then you don't need to run it locally. You can visit the deployed app here: https://xplorotest.herokuapp.com/
+> Note that if you want to test out the app, then you don't need to run it locally. You can visit the deployed app here: https://widget-display.vercel.app/
 
 To install locally you will need to have node installed on your computer.
 
 ```bash
-git clone https://github.com/TylerWoolcott/widget-display-test.git
+git clone https://github.com/TylerWoolcott/widget-display.git
 yarn install
 yarn start
 ```
