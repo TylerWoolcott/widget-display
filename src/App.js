@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 function App() {
   const [modalShow, setModalShow] = useState(false);
   return (
-    <div className="container">
+    <div className="alt-container">
       <div className="widget">
           <intelligence-widget apiKey="YOUR_API_KEY_HERE" topicId="a1Gb0000000LGk6EAG" language="en"></intelligence-widget>          
       </div>

@@ -119,12 +119,12 @@ Open `http://localhost:3000` in a browser.
 How did this little mini project go?
 
 I actually really enjoyed it but it took me quite a while because I had to learn web components and how to use them in a React project environment. If I were to tackle a project of similar size then it would take me less than half the time. I developed a system of working comprising of 3 interlinking parts. 
-1. **Widget Maker repo**
+1. [Web Component Widget](https://github.com/TylerWoolcott/web-component-widget.git) repo
 - I developed and built the widget then `yarn run build`ed it and copied the `build/static/index.js` file.
-2. **Widget Host repo**
+2. [Widget Host](https://github.com/TylerWoolcott/widget-host.git) repo 
 - I pasted it into the `public/index.js`directory and removed the existing one. 
 - I pushed the changes to the repo and deployed it to Vercel `https://widget-host.vercel.app/index.js`
-3. **Widget Display repo**
+3. [Widget Display](https://github.com/TylerWoolcott/widget-display.git) repo 
 - I pasted the `<script type="text/javascript" src="https://widget-host.vercel.app/index.js"></script>` into the `public/index.html` file and added the `<intelligence-widget apiKey="YOUR_API_KEY_HERE" topicId="a1Gb0000000LGk6EAG" language="en"></intelligence-widget>` to the src/app.js file. This repo represents a customer embedding the widget on their site, which users can copy the embed link from the frontend and paste it into their own site.
 
 ### What am I proud of?
